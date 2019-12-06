@@ -2,14 +2,21 @@ import React from "react";
 import "./App.css";
 import axios from "axios";
 import CardList from "./CardList";
+import NavBar from "./NavBar";
 
 class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      data: []
+      data: [],
+      search: ""
     };
   }
+
+  handleChanges = e => {
+    this.setState({ search: e.target.value });
+    console.log(this.state.search);
+  };
 
   componentDidMount() {
     axios
@@ -26,8 +33,8 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <h1>Women's World Cup Most Searched Athletes</h1>
-        <CardList data={this.state.data} />
+        <NavBar search={this.search} handleChanges={this.handleChanges} />
+        <CardList data={this.state.data} search={this.state.search} />
       </div>
     );
   }

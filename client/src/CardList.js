@@ -4,9 +4,11 @@ import Card from "./Card";
 const CardList = props => {
   return (
     <div>
-      {props.data.map(ath => (
-        <Card key={ath.id} data={ath} />
-      ))}
+      {props.data
+        .filter(ath => ath.name.includes(props.search))
+        .map(ath => (
+          <Card key={ath.id} data={ath} />
+        ))}
     </div>
   );
 };
