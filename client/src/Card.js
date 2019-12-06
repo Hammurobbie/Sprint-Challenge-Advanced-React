@@ -15,10 +15,6 @@ const CardDiv = styled.div`
   }
 `;
 
-const H2 = styled.h2`
-  color: #6a99af;
-`;
-
 const Card = props => {
   return (
     <CardDiv>
