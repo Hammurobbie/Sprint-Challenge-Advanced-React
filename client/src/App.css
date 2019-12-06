@@ -46,18 +46,18 @@
   align-items: center;
   border-bottom: 1px solid rgb(221, 221, 221);
   display: flex;
-  height: 130px;
+  height: 135px;
   justify-content: space-between;
   flex-direction: column;
   padding: 0 3%;
-  width: 100%;
+  width: 95%;
   -webkit-box-shadow: 0px 2px 15px -8px rgba(0, 0, 0, 0.42);
   -moz-box-shadow: 0px 2px 15px -8px rgba(0, 0, 0, 0.42);
   box-shadow: 0px 2px 15px -8px rgba(0, 0, 0, 0.42);
 }
 
 .dark-mode__toggle {
-  background: papayawhip;
+  background: #f2f5e3;
   border-radius: 50px;
   border: 1px solid black;
   height: 18px;
@@ -67,7 +67,7 @@
 }
 
 .toggle {
-  background: #f68819;
+  background: #5f7c8d;
   border-radius: 50px;
   height: 18px;
   left: 0;
@@ -83,6 +83,10 @@
 .dark-mode {
   color: #fff;
   background-color: #313843;
+}
+
+.dark-mode h2 {
+  color: #1f2022;
 }
 
 .dark-mode .navbar {
@@ -110,8 +114,8 @@
 }
 
 .light-mode-input {
-  color: #f68819;
-  background-color: papayawhip;
+  color: #f2f5e3;
+  background-color: #8f95a3;
   border: none;
   border-radius: 15px;
   text-align: center;
@@ -127,11 +131,11 @@
 }
 
 .light-mode-input::placeholder {
-  color: #f68819;
+  color: #f2f5e3;
   text-align: center;
 }
 
 .dark-mode-input::placeholder {
-  color: #fff;
+  color: #f2f5e3;
   text-align: center;
 }
